@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://www.romainpoulin.fr/"
 # include content marked as draft
 buildDrafts = false
 # include content with publishdate in the future
@@ -13,7 +13,7 @@ editor = "nano"
 languageCode = "en"
 language = "en"
 theme = "vncnt-hugo"
-title = "John Doe · Landing Page"
+title = "Romain POULIN"
 
 _merge = "none"
 
@@ -22,48 +22,45 @@ _merge = "none"
   posts = "posts/:slug/"
 
 [params]
-  author = "John Doe"
+  author = "Romain POULIN"
   # email does still work but is deprecated.
   # use [params.contact.email] instead.
-  #email = "john.doe@example.com"
+  #email = "rp-pharma@pm.me"
   description = "Landing Page"
-  bio = "First Row.  \nSecond Row."
+  bio = " ###### **Bienvenue sur mon site web !**  \n ###### Vous trouverez ici mon CV, mes conditions et mes disponibilités !  \n ###### Je remplace toute l’année sur toute la France donc n’hésitez pas à me contacter !   \n ###### À bientôt dans votre officine !"
   avatar = "img/avatar.jpg"
   favicon = "img/favicon.ico"
-  error404 = "There is no such page."
+  error404 = "Oups....Erreur 404 !"
 
   [params.contact]
-    # the default fontawesome style in simple key-value pairs is "fab", i.e. brand icons
-    github = "https://github.com/jdoe"
-    instagram = "https://instagram.com/jdoe"
-    twitter = "https://twitter.com/jdoe"
     
     # You may use (inline) tables for more versatility
     # This allows sorting and even more icons.
     # Just make sure not to mix key-value pairs, inline tables and tables,
     # although keeping keeping this order is ok.
     # See https://toml.io/en/v1.0.0 for details
-    0 = { name = "ello", icon = "ello", style = "fab", link = "" } # empty links are possible
-    [params.contact.1] # key names are sorted lexicographically
-      name = "hiking club" # may be omitted. defaults to key name
-      icon = "hiking" # may be omitted. defaults to key name
+    
+    
+    [params.contact.2] # key names are sorted lexicographically
+      name = "CV" # may be omitted. defaults to key name
+      icon = "user-tie" # may be omitted. defaults to key name
+      style = "fas" # may be omitted. default = "fas"
+      link = "https://local-hiking.club"
+    [params.contact.3] # key names are sorted lexicographically
+      name = "conditions" # may be omitted. defaults to key name
+      icon = "search" # may be omitted. defaults to key name
+      style = "fas" # may be omitted. default = "fas"
+      link = "https://local-hiking.club"
+    [params.contact.4] # key names are sorted lexicographically
+      name = "planning" # may be omitted. defaults to key name
+      icon = "calendar" # may be omitted. defaults to key name
       style = "fas" # may be omitted. default = "fas"
       link = "https://local-hiking.club"
     [params.contact.email]
       name = "email" # may be omitted. defaults to key name
       icon = "envelope" # may be omitted. defaults to key name
       style = "fas" # may be omitted. default = "fas"
-      link = "mailto:john.doe@example.com"
-    [params.contact.mastodon]
-      style = "fab" # may be omitted. default = "fas"
-      link = "https://example.social/@jdoe"
-      # By default rel="me" is not set
-      # For some services, it makes sense to set it though.
-      # This is the case for Mastodon (and Github) if you link back from these services.
-      # See
-      # https://microformats.org/wiki/rel-me and
-      # https://docs.joinmastodon.org/user/profile/#verification
-      # for more information.
-      # This defaults to false to cover the case of not having control over the linked site.
-      rel-me = true
+      link = "mailto:rp-pharma@pm.me"
+    
+      
       
