@@ -45,17 +45,26 @@ style = "github-dark"
   icon = "fa fa-linkedin fa-2x"
   weight = 3
   url = "https://www.linkedin.com/in/romain-poulin-174832145/"
+[[params.social]]
+  name = "mail"
+  icon = "fa fa-envelop fa-2x"
+  weight = 1
+  url = "mailto:rp-pharma@pm.me"
 
 # Menu links
 [[menu.main]]
-  name = "CV"
+  name = "Accueil"
   weight = 1
+  url  = ""
+[[menu.main]]
+  name = "CV"
+  weight = 2
   url  = "cv/"
 [[menu.main]]
   name = "Conditions"
-  weight = 2
+  weight = 3
   url  = "conditions/"
 [[menu.main]]
   name = "Disponibilités"
-  weight = 3
+  weight = 4
   url = "disponibilites/"
